@@ -31,6 +31,11 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'git' \
+  'osx' \
+  'homebrew' \
+  'tmux' \
+  'syntax-highlighting' \
   'completion' \
   'prompt'
 
@@ -85,7 +90,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'steeef'
 
 #
 # Ruby
@@ -117,18 +122,18 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
+ zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'cursor' \
+  'root'
 #
 # Set syntax highlighting styles.
-# zstyle ':prezto:module:syntax-highlighting' styles \
-#   'builtin' 'bg=blue' \
-#   'command' 'bg=blue' \
-#   'function' 'bg=blue'
+#zstyle ':prezto:module:syntax-highlighting' styles \
+#  'builtin' 'bg=blue' \
+#  'command' 'bg=blue' \
+#  'function' 'bg=blue'
 
 #
 # Terminal
@@ -148,10 +153,10 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-# zstyle ':prezto:module:tmux:auto-start' local 'yes'
+#zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+#zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
-# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+#zstyle ':prezto:module:tmux:iterm' integrate 'yes'
