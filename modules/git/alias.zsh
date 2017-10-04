@@ -25,6 +25,13 @@ zstyle -s ':prezto:module:git:status:ignore' submodules '_git_status_ignore_subm
 #
 # Aliases
 #
+alias gpod='git pull origin develop'
+alias gpuod='git push origin develop'
+alias gpos='git pull origin staging'
+alias gpuos='git push origin staging'
+alias gpom='git pull origin master'
+alias gpuom='git push origin master'
+alias gcam='git commit -am'
 
 if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   # Git
